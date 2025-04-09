@@ -1,0 +1,59 @@
+body{display: flex; justify-content: center; align-items: center; height: 100vh;}
+#book_cover{
+    width: 90%; height: 80vh;
+    background-color: plum; border: 1px solid rgb(179, 131, 179); border-radius: 15px;
+    box-shadow: 20px 8px 8px 10px lightgrey;
+    box-sizing: border-box;
+    display: grid; grid-template-columns: 5fr 5fr 1fr; grid-template-rows: 1fr;
+    place-content: center center;
+}
+
+.white_page{
+    background-color:lavender;
+    width: 95%; height: 80%;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+
+#today_pic{
+    width: 400px; height: 400px;
+    background-color: rgb(255, 250, 95);
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+
+#sec_page{
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column; 
+}
+
+#main-t{
+    width: 300px; height: 300px;
+}
+
+#list_box{
+    width: 5%; height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+}
+
+#list_box > a{
+    width: 100px; height: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    box-shadow: 5px 2px 4px 3px grey;
+    display: flex; justify-content: center; align-items: center;
+}
+
+#list_box > a:nth-child(1){background-color: rgb(255, 115, 115);}
+#list_box > a:nth-child(2){background-color: lightsalmon;}
+#list_box > a:nth-child(3){background-color: rgb(252, 255, 103);}
+#list_box > a:nth-child(4){background-color: rgb(180, 250, 129);}
+
+.box02:hover{
+    transform: translateX(10px);
+    cursor: pointer;
+}
