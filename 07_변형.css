@@ -1,0 +1,25 @@
+.box{
+    width: 100px; height: 100px; background-color: thistle;
+}
+#test01:hover{
+    /* 위치 변형 */
+    /* transform: translateX(100px); x축으로 100px 이동 */
+    /* transform: translateY(100px); Y축으로 100px 이동*/
+    transform: translate(100px, 100px);
+    /* 크기 변형 */
+    transform: scale(3,2);
+    /* 회전 */
+    transform: rotate(45deg);
+    /* 비틀기 */
+    transform: skew(30deg, 50deg);
+}
+#test02:hover{
+    /* perspective는 3D 형태로 인식할 수 있도록 함 */
+    /* transform: perspective(300px) translateZ(100px); */
+    transform: perspective(300px) rotate3d(1,0,1,45deg);
+    /* transform: perspective(300px) rotate3d(x,y,x,angle); x,y,z 에는 0,1의 값을 넣어 true/false 여부 설정*/
+}
+#test03:hover{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
